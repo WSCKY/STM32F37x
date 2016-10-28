@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+".\objects\startup_stm32f37x.o"
+".\objects\main.o"
+".\objects\stm32f37x_it.o"
+".\objects\system_stm32f37x.o"
+".\objects\led.o"
+".\objects\cpu_utils.o"
+".\objects\uart.o"
+".\objects\stm32f37x_gpio.o"
+".\objects\stm32f37x_misc.o"
+".\objects\stm32f37x_rcc.o"
+".\objects\stm32f37x_syscfg.o"
+".\objects\stm32f37x_usart.o"
+".\objects\croutine.o"
+".\objects\list.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+".\objects\port.o"
+".\objects\heap_4.o"
+".\objects\cmsis_os.o"
+--library_type=microlib --strict --scatter ".\Objects\RTOS.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\RTOS.map" -o .\Objects\RTOS.axf

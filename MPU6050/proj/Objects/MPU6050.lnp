@@ -1,0 +1,19 @@
+--cpu Cortex-M4.fp
+".\objects\startup_stm32f37x.o"
+".\objects\main.o"
+".\objects\stm32f37x_it.o"
+".\objects\system_stm32f37x.o"
+".\objects\uart.o"
+".\objects\delay.o"
+".\objects\led.o"
+".\objects\mpu6050.o"
+".\objects\stm32f37x_gpio.o"
+".\objects\stm32f37x_rcc.o"
+".\objects\stm32f37x_misc.o"
+".\objects\stm32f37x_syscfg.o"
+".\objects\stm32f37x_usart.o"
+".\objects\stm32f37x_i2c.o"
+--library_type=microlib --strict --scatter ".\Objects\MPU6050.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\MPU6050.map" -o .\Objects\MPU6050.axf

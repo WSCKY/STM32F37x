@@ -1,0 +1,15 @@
+--cpu Cortex-M4.fp
+".\objects\startup_stm32f37x.o"
+".\objects\main.o"
+".\objects\stm32f37x_it.o"
+".\objects\system_stm32f37x.o"
+".\objects\uart.o"
+".\objects\stm32f37x_gpio.o"
+".\objects\stm32f37x_misc.o"
+".\objects\stm32f37x_rcc.o"
+".\objects\stm32f37x_syscfg.o"
+".\objects\stm32f37x_usart.o"
+--library_type=microlib --strict --scatter ".\Objects\UART.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\UART.map" -o .\Objects\UART.axf

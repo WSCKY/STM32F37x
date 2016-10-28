@@ -1,0 +1,17 @@
+--cpu Cortex-M4.fp
+".\objects\startup_stm32f37x.o"
+".\objects\main.o"
+".\objects\stm32f37x_it.o"
+".\objects\system_stm32f37x.o"
+".\objects\delay.o"
+".\objects\pwm.o"
+".\objects\stm32f37x_gpio.o"
+".\objects\stm32f37x_misc.o"
+".\objects\stm32f37x_rcc.o"
+".\objects\stm32f37x_syscfg.o"
+".\objects\stm32f37x_tim.o"
+".\objects\stm32f37x_usart.o"
+--library_type=microlib --strict --scatter ".\Objects\PWM.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\PWM.map" -o .\Objects\PWM.axf
